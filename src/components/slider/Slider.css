@@ -7,7 +7,7 @@
     }
 
     .carousel-title {
-    color: white;
+    color: rgb(131, 165, 160);
     width: 40%;
     text-align: center;
     font-size: 30px;
@@ -44,7 +44,7 @@
     }
 
     .slide-desc > span {
-    color: white;
+    color: rgb(208, 241, 228);
     display: block;
     font-size: 22px;
     padding: 20px 0 20px 10px;

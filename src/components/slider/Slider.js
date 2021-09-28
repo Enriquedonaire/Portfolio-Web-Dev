@@ -8,13 +8,13 @@ const Slider = () => {
     return (
         <div className="carousel-container">
             <div className="carousel-title">
-                <h2>Projects</h2>
+                <h2>Look what I've Built</h2>
             </div>
 
             <Carousel
+                infinite
                 arrows
                 slidesPerPage={7}
-                infinite
                 animationSpeed={200}
                 centered
                 offset={50}

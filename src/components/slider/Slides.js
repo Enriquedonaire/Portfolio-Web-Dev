@@ -9,13 +9,13 @@ const slidesInfo = [
         url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"
     },
     {
-        src: "https://cdn.pixabay.com/photo/2018/07/16/16/08/island-3542290_960_720.jpg",
+        src: "https://thumbs.dreamstime.com/b/astranavt-alegre-do-macaco-90350830.jpg",
         alt: "Project 2",
         desc: "FunnyFy | About fun content | JavaScript | NodeJS | Express | Handlebars ",
         url: "https://funnyfy.herokuapp.com"
     },
     {
-        src: "https://cdn.pixabay.com/photo/2016/01/19/16/49/old-tv-1149416_960_720.jpg",
+        src: "https://cdn.pixabay.com/photo/2018/07/16/16/08/island-3542290_960_720.jpg",
         alt: "Project 3",
         desc: "RecyClup | Sustainable App to give a new life to your old things | ReactJS | Material UI ",
         url: "https://recyclup.herokuapp.com"
@@ -28,7 +28,8 @@ const slidesInfo = [
         url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"
     },
     {
-        src: "https://cdn.pixabay.com/photo/2020/03/26/03/20/goku-4969082_960_720.jpg",
+        src: "https://cdn.pixabay.com/photo/2016/01/19/16/49/old-tv-1149416_960_720.jp",
+        
         alt: "Project 5",
         desc: "Project 5",
         url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"

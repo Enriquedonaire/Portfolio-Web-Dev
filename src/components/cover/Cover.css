@@ -17,12 +17,12 @@
 }
 
 .cover-container > h1 {
-    color: rgba(90, 189, 180, 0.719);
+    color: rgba(130, 209, 203, 0.719);
     font-size: 130px;    
 }
 
 .cover-container > p{
     margin-top: 8px;
-    color: rgba(255, 255, 255, 0.575);
+    color: rgba(238, 237, 237, 0.705);
     font-size: 32px
 }
