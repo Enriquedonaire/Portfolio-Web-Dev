@@ -22,14 +22,13 @@ const slidesInfo = [
 
     },
     {
-        src: "https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655_960_720.jpg",
+        src: "https://image.shutterstock.com/image-vector/mobius-strip-ring-sacred-geometry-600w-1067942186.jpg",
         alt: "Project 4",
-        desc: "Project 4",
-        url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"
+        desc: "Responsive App with ReactJS, Material-UI, REST OMD-API, Movie's App for Cinema & series Lovers",
+        url: "https://moebius-app.herokuapp.com"
     },
     {
         src: "https://cdn.pixabay.com/photo/2016/01/19/16/49/old-tv-1149416_960_720.jp",
-        
         alt: "Project 5",
         desc: "Project 5",
         url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"

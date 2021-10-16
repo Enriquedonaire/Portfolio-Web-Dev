@@ -22,7 +22,7 @@
     cursor: pointer;
     }
 
-    .slide-container > img {
+    .slide-container > img  {
     object-fit: contain;
     transition: all 0.2s ease-in-out;
     }
