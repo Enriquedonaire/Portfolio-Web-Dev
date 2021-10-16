@@ -14,7 +14,7 @@ const Slider = () => {
             <Carousel
                 infinite
                 arrows
-                slidesPerPage={7}
+                slidesPerPage={5}
                 animationSpeed={200}
                 centered
                 offset={50}
