@@ -1,4 +1,6 @@
 
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+
 import "./Slider.css";
 
 const slidesInfo = [
@@ -38,19 +40,14 @@ const slidesInfo = [
 
 const slides = slidesInfo.map((slide) => (
     <div className="slide-container">
-        <img src={slide.src} alt={slide.alt} />
-        <div className="slide-desc">
-            <span>{slide.desc}</span>
-            <button className="btn btn-outline-secondary rounded-0">
-                <a href={slide.url}  target="_blank" rel="noreferrer">Go!
-                    </a> 
-
-            </button>
-
-        </div>
-
-
-
+        <Router>
+            <Link to={slide.url} target="_blank"  >
+                <img src={slide.src} alt={slide.alt}/>
+                <div className="slide-desc">
+                    <span>{slide.desc}</span>
+                </div>
+            </Link>
+        </Router>
     </div>
 ));
 
