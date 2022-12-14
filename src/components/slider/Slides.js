@@ -17,13 +17,6 @@ const slidesInfo = [
         url: "https://funnyfy.herokuapp.com"
     },
     {
-        src: "https://cdn.pixabay.com/photo/2018/07/16/16/08/island-3542290_960_720.jpg",
-        alt: "Project 3",
-        desc: "RecyClup | Sustainable App to give a new life to your old things | ReactJS | Material UI ",
-        url: "https://recyclup.herokuapp.com"
-
-    },
-    {
         src: "https://image.shutterstock.com/image-vector/mobius-strip-ring-sacred-geometry-600w-1067942186.jpg",
         alt: "Project 4",
         desc: "Responsive App with ReactJS, Material-UI, REST OMD-API, Movie's App for Cinema & series Lovers",
@@ -34,6 +27,13 @@ const slidesInfo = [
         alt: "Project 5",
         desc: "Project 5",
         url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"
+    },
+    {
+        src: "https://cdn.pixabay.com/photo/2018/07/16/16/08/island-3542290_960_720.jpg",
+        alt: "Project 3",
+        desc: "RecyClup | Sustainable App to give a new life to your old things | ReactJS | Material UI ",
+        url: "https://recyclup.herokuapp.com"
+
     },
 
 ]
