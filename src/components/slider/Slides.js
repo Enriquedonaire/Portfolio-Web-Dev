@@ -1,53 +1,50 @@
-
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-
-import "./Slider.css";
+// import "./Slider.css";
 
 const slidesInfo = [
     {
-        src: "https://cdn.pixabay.com/photo/2018/09/16/22/08/software-3682509_960_720.jpg",
-        alt: "Project 1",
+        src: "https://i.imgur.com/FuihTw0.jpg",
+        alt: "Goku in the Cloud",
         desc: "Goku in the Cloud | Online Game | JavaScript - HTML - CSS - DOM Manipulation",
         url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"
     },
     {
-        src: "https://thumbs.dreamstime.com/b/astranavt-alegre-do-macaco-90350830.jpg",
-        alt: "Project 2",
-        desc: "FunnyFy | About fun content | JavaScript | NodeJS | Express | Handlebars ",
-        url: "https://funnyfy.herokuapp.com"
+        src: "https://www.barcelonairporthotel.com/wp-content/uploads/2023/09/Deluxe-2022-1.jpg",
+        alt: "Miranda Hotel",
+        desc: "Miranda Hotel | Next generation Hotel web site | JavaScript | NodeJS | Express | BEM ",
+        url: "http://hotel-miranda.site"
     },
     {
-        src: "https://image.shutterstock.com/image-vector/mobius-strip-ring-sacred-geometry-600w-1067942186.jpg",
-        alt: "Project 4",
-        desc: "Responsive App with ReactJS, Material-UI, REST OMD-API, Movie's App for Cinema & series Lovers",
-        url: "https://moebius-app.herokuapp.com"
-    },
-    {
-        src: "https://cdn.pixabay.com/photo/2016/01/19/16/49/old-tv-1149416_960_720.jp",
-        alt: "Project 5",
-        desc: "Project 5",
-        url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"
-    },
-    {
-        src: "https://cdn.pixabay.com/photo/2018/07/16/16/08/island-3542290_960_720.jpg",
-        alt: "Project 3",
-        desc: "RecyClup | Sustainable App to give a new life to your old things | ReactJS | Material UI ",
-        url: "https://recyclup.herokuapp.com"
+        src: "https://img.freepik.com/vector-gratis/imagen-estructura-metalica-poligonal-tacto-mano-humana-pantalla-electronica-ilustracion-vectorial-abstracta_1284-30756.jpg",
+        alt: "Pic-Finder ",
+        desc: "Pic-Finder | A styled Image Searcher | ReactJS | Material UI ",
+        url: "https://enriquedonaire.github.io/PicFinder-App"
 
     },
+    {
+        src: "https://f4.bcbits.com/img/a1309081681_65",
+        alt: "Oxygen-Shop",
+        desc: "Responsive App with ReactJS, Material-UI",
+        url: "https://Enriquedonaire.github.io/Oxygen-Shop-Enrique"
+    },
+    {
+        src: "https://png.pngtree.com/thumb_back/fw800/background/20230618/pngtree-cartoon-style-3d-render-of-calculator-and-math-symbols-on-background-image_3631042.jpg",
+        alt: "CalculatorJS",
+        desc: " | JavaScript | NodeJS | Express | BEM",
+        url: "https://enriquedonaire.github.io/JS-Calculator-Assignment"
+    },
+    
 
 ]
 
-const slides = slidesInfo.map((slide) => (
-    <div className="slide-container">
-        <Router>
-            <Link to={slide.url} target="_blank"  >
-                <img src={slide.src} alt={slide.alt}/>
-                <div className="slide-desc">
-                    <span>{slide.desc}</span>
-                </div>
-            </Link>
-        </Router>
+const slides = slidesInfo.map((slide, index) => (
+    <div className="slide-container" key={index}>
+            <a href={slide.url} target="_blank" rel="noopener noreferrer">
+            <img className="slide-container-img" src={slide.src} alt={slide.alt} />
+            <div className="slide-desc">
+                <span>{slide.desc}</span>
+            </div>
+        </a>
+
     </div>
 ));
 

@@ -1,35 +1,40 @@
 import React from "react";
-import Carousel from "@brainhubeu/react-carousel";
-import "@brainhubeu/react-carousel/lib/style.css";
-import Slides from "./Slides";
+import { Navigation, Scrollbar, A11y, EffectCoverflow, Pagination } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
 import "./Slider.css";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css';
 
-const Slider = () => {
+
+const Slider = ({slides}) => {
     return (
-        <div className="carousel-container">
-            <div className="carousel-title">
-                <h2>Look what I've Built</h2>
-            </div>
-
-            <Carousel
-                infinite
-                arrows
-                slidesPerPage={5}
-                animationSpeed={200}
-                centered
-                offset={50}
-                itemWidth={400}
-                slides={Slides}
-                breakpoints={{
-                    960: {
-                        slidesPerPage: 1,
-                        arrows: false,
-                        itemWidth: 250,
-                    },
-                }}
-            />
-        </div>
+        <Swiper
+          // install Swiper modules
+            modules={[Navigation, EffectCoverflow, Pagination, Scrollbar, A11y]}
+            effect={'coverflow'}
+            spaceBetween={50}
+            slidesPerView={3}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+            className="swiper-container"
+            >
+                {slides.map((slide) =>
+                    <SwiperSlide className="swiper-slide" key={slide.src}>
+                        {slide}
+                    </SwiperSlide>
+                )}
+        </Swiper>
     );
 };
 
 export default Slider;
+

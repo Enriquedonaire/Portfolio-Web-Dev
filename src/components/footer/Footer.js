@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="cover-container">
                 <div className="footer-info">
                     <h1>Enrique Donaire</h1>
-                    <p>Based in Granada - Spain</p>
+                    <p>Barcelona - Spain</p>
                 </div>
                 <div className="footer-contact">
                     <h3>Contact me</h3>

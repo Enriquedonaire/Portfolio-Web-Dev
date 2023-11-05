@@ -1,91 +1,104 @@
-    .carousel-container {
-    display: flex;
-    vertical-align: center;
-    align-items: center;
-    background-color: rgb(6, 17, 16);
-    padding: 30px 0 30px 0;
+    /* .swiper-container {
+        display: flex;
+        vertical-align: center;
+        align-items: center;
+        border: none;
+        background-color: rgba(6, 17, 16, 0.93);
+        padding: 30px 0 30px 0;
+        
+    } */
+
+    /* Estilos personalizados para cada diapositiva del Swiper */
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Ajustes para la imagen en la diapositiva */
+        
+    }
+    .swiper-title {
+        color: rgb(131, 165, 160);
+        width: 40%;
+        text-align: center;
+        font-size: 30px;
+        padding: 0 100px 0 100px;
     }
 
-    .carousel-title {
-    color: rgb(131, 165, 160);
-    width: 40%;
+    /* Estilos personalizados para cada diapositiva del Swiper */
+.swiper-slide {
     text-align: center;
-    font-size: 30px;
-    padding: 0 100px 0 100px;
-    }
+    font-size: 18px;
+    background: #0c0c0c;
+    display: flex;
+    border-radius: 15%;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center; /* Esto centra verticalmente el contenido */
 
-    .slide-container {
-    height: 80%;
+    /* Ajustes para la imagen en la diapositiva */
+}
+
+.slide-container {
+    height: 100%; /* Ocupa toda la altura de la diapositiva */
     border-radius: 40px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    }
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
-    .slide-container > img  {
-    object-fit: contain;
+.slide-container-img {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 55vh; /* Ocupa todo el alto del contenedor */
+    object-fit: cover; /* Escala la imagen para ajustarse al contenedor sin distorsión */
     transition: all 0.2s ease-in-out;
-    }
+    /* margin-bottom: 150px; */
+}
 
-    .slide-container:hover > img {
-    transform: scale(1.2);
-    opacity: 0.7;
+/* Resto de tus estilos... */
+
+    .slide-container-img:hover {
+        transform: scale(1.2);
+        opacity: 0.7;
     }
 
     .slide-desc {
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 70%;
-    padding-left: 30px;
-    border-top-left-radius: 20px;
-    opacity: 0.8;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 70%;
+        padding-left: 30px;
+        border-top-left-radius: 20px;
+        opacity: 0.8;
     }
 
-    .slide-desc > span {
-    color: rgb(208, 241, 228);
-    display: block;
-    font-size: 22px;
-    padding: 20px 0 20px 10px;
+    .slide-desc>span {
+        color: rgb(208, 241, 228);
+        display: block;
+        font-size: 22px;
+        padding: 20px 0 20px 10px;
     }
 
-    .btn-secondary{
+    .btn-secondary {
         background-color: gray;
         font-family: 'roboto', sans-serif;
     }
 
-    .BrainhubCarousel__arrows {
-    background-color: white;
-    border-radius: 50%;
-    margin: 20px;
-    }
-
-    .BrainhubCarousel__arrows > span {
-    border-color: black;
-    }
-
-    .BrainhubCarousel__arrows:hover {
-    background-color: white !important;
-    }
-
-    .BrainhubCarousel__arrows:hover > span {
-    border-color: black !important;
-    }
-
-
-@media only screen and (max-width: 960px) {
-        .carousel-container {
-        flex-direction: column;
+    @media only screen and (max-width: 960px) {
+        .swiper-container {
+            flex-direction: column;
         }
-    
-        .carousel-title {
-        width: 100%;
-        text-align: center;
-        padding: 50px 0 50px 0;
+
+        .swiper-title {
+            width: 100%;
+            text-align: center;
+            padding: 50px 0 50px 0;
         }
-    
+
         .slide-container {
-        width: 100%;
+            width: 100%;
         }
     }
