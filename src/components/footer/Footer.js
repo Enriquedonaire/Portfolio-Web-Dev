@@ -30,11 +30,16 @@ const Footer = () => {
                     <a href="https://codepen.io/Enrique-Andr" target="_blank" rel="noreferrer">
                         <i className="fab fa-codepen codepen"></i>
                     </a>
-                    Design By E.Donaire
+                    <a href="/Enrique-Donaire-Web-Dev-2023.pdf (3) (1).pdf" download target="_blank" rel="noreferrer">
+                        <i className="fa-solid fa-file-pdf pdf"></i>
+                    </a>
+                    
+                    <div><h3> Design By E.Donaire</h3></div>
                 </div>
+                
             </div>
         </footer>
-        // </div >
+        // <FontAwesomeIcon icon="fa-solid fa-file-pdf" />
     );
 };
 
