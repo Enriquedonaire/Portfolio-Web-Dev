@@ -1,5 +1,5 @@
 #  💻 Portfolio Web-Dev 
-##   Tecnologies 🛠️ : 
+##  🛠️ Tecnologies  : 
 <br/>
 - ReactJS <br/>
 - JavaScript <br/>
