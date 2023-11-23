@@ -1,31 +1,15 @@
-    /* .swiper-container {
-        display: flex;
-        vertical-align: center;
-        align-items: center;
-        border: none;
-        background-color: rgba(6, 17, 16, 0.93);
-        padding: 30px 0 30px 0;
-        
-    } */
+/* Modificación para hacer el slider responsive */
 
-    /* Estilos personalizados para cada diapositiva del Swiper */
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+/* Estilos para la clase principal del contenedor del slider */
+.swiper-container {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgb(6, 17, 16);
+    padding: 30px 0;
+}
 
-        /* Ajustes para la imagen en la diapositiva */
-        
-    }
-    .swiper-title {
-        color: rgb(131, 165, 160);
-        width: 40%;
-        text-align: center;
-        font-size: 30px;
-        padding: 0 100px 0 100px;
-    }
-
-    /* Estilos personalizados para cada diapositiva del Swiper */
+/* Ajustes para las diapositivas del Swiper */
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -34,19 +18,18 @@
     border-radius: 15%;
     object-fit: cover;
     justify-content: center;
-    align-items: center; /* Esto centra verticalmente el contenido */
-
-    /* Ajustes para la imagen en la diapositiva */
+    align-items: center;
 }
 
+/* Contenedor principal de cada slide */
 .slide-container {
-    height: 100%; /* Ocupa toda la altura de la diapositiva */
+    height: auto;
     border-radius: 40px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .slide-container-img {
@@ -64,41 +47,56 @@
         opacity: 0.7;
     }
 
+
+/* Estilos para la descripción del slide */
+.slide-desc {
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding-left: 30px;
+    border-top-left-radius: 20px;
+    opacity: 0.8;
+}
+
+/* Texto en la descripción del slide */
+.slide-desc>span {
+    color: rgb(208, 241, 228);
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* Efecto de escala y opacidad al hacer hover en la imagen */
+.slide-container:hover .slide-container-img {
+    transform: scale(1.2);
+    opacity: 0.7;
+}
+
+/* Estilos para la descripción en dispositivos móviles */
+@media only screen and (max-width: 960px) {
+    .swiper-title {
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .swiper-container {
+        flex-direction: column;
+    }
+
+    .slide-container {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .slide-desc {
-        background-color: black;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 70%;
-        padding-left: 30px;
-        border-top-left-radius: 20px;
-        opacity: 0.8;
+        padding: 5px;
     }
 
     .slide-desc>span {
-        color: rgb(208, 241, 228);
-        display: block;
-        font-size: 22px;
-        padding: 20px 0 20px 10px;
+        font-size: 16px;
     }
-
-    .btn-secondary {
-        background-color: gray;
-        font-family: 'roboto', sans-serif;
-    }
-
-    @media only screen and (max-width: 960px) {
-        .swiper-container {
-            flex-direction: column;
-        }
-
-        .swiper-title {
-            width: 100%;
-            text-align: center;
-            padding: 50px 0 50px 0;
-        }
-
-        .slide-container {
-            width: 100%;
-        }
-    }
+}

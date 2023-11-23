@@ -39,7 +39,6 @@ const Footer = () => {
                 
             </div>
         </footer>
-        // <FontAwesomeIcon icon="fa-solid fa-file-pdf" />
     );
 };
 

@@ -1,12 +1,7 @@
 // import "./Slider.css";
 
 const slidesInfo = [
-    {
-        src: "https://i.imgur.com/FuihTw0.jpg",
-        alt: "Goku in the Cloud",
-        desc: "Goku in the Cloud | Online Game | JavaScript - HTML - CSS - DOM Manipulation",
-        url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"
-    },
+
     {
         src: "https://www.barcelonairporthotel.com/wp-content/uploads/2023/09/Deluxe-2022-1.jpg",
         alt: "Miranda Hotel",
@@ -27,18 +22,25 @@ const slidesInfo = [
         url: "https://Enriquedonaire.github.io/Oxygen-Shop-Enrique"
     },
     {
+        src: "https://i.imgur.com/FuihTw0.jpg",
+        alt: "Goku in the Cloud",
+        desc: "Goku in the Cloud | Online Game | JavaScript - HTML - CSS - DOM Manipulation",
+        url: "https://enriquedonaire.github.io/GOKU-IN-THE-CLOUD-GAME"
+    },
+    {
         src: "https://png.pngtree.com/thumb_back/fw800/background/20230618/pngtree-cartoon-style-3d-render-of-calculator-and-math-symbols-on-background-image_3631042.jpg",
         alt: "CalculatorJS",
         desc: " | JavaScript | NodeJS | Express | BEM",
         url: "https://enriquedonaire.github.io/JS-Calculator-Assignment"
     },
-    
+
+
 
 ]
 
 const slides = slidesInfo.map((slide, index) => (
     <div className="slide-container" key={index}>
-            <a href={slide.url} target="_blank" rel="noopener noreferrer">
+        <a href={slide.url} target="_blank" rel="noopener noreferrer">
             <img className="slide-container-img" src={slide.src} alt={slide.alt} />
             <div className="slide-desc">
                 <span>{slide.desc}</span>
