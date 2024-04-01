@@ -6,7 +6,7 @@ const slidesInfo = [
         src: "https://www.barcelonairporthotel.com/wp-content/uploads/2023/09/Deluxe-2022-1.jpg",
         alt: "Miranda Hotel",
         desc: "Miranda Hotel | Next generation Hotel web site | JavaScript | NodeJS | Express | BEM ",
-        url: "http://hotel-miranda.site"
+        url: "https://enriquedonaire.github.io/Portfolio-Web-Dev"
     },
     {
         src: "https://img.freepik.com/vector-gratis/imagen-estructura-metalica-poligonal-tacto-mano-humana-pantalla-electronica-ilustracion-vectorial-abstracta_1284-30756.jpg",
