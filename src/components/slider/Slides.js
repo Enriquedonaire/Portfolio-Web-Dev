@@ -3,18 +3,12 @@
 const slidesInfo = [
 
     {
-        src: "https://www.barcelonairporthotel.com/wp-content/uploads/2023/09/Deluxe-2022-1.jpg",
-        alt: "Miranda Hotel",
-        desc: "Hotel Site | Next generation Hotel web site | JavaScript | NodeJS | Express | BEM ",
-        url: "https://enriquedonaire.github.io/Hotel-Miranda-WebPage"
-    },
-    {
         src: "https://miro.medium.com/v2/resize:fit:1400/1*rQ3d_dKG7V2JhX8SrUjs6g.png",
         alt: "Dashboard A3M",
         desc: "Dashboard | A Full-Responsive Data Dashboard | ReactJS | TailwindCSS | BEM",
         url: "https://enriquedonaire.github.io/Dashboard-A3M/"
 
-    },//
+    },
     {
         src: "https://img.freepik.com/vector-gratis/imagen-estructura-metalica-poligonal-tacto-mano-humana-pantalla-electronica-ilustracion-vectorial-abstracta_1284-30756.jpg",
         alt: "Pic-Finder ",
@@ -28,6 +22,12 @@ const slidesInfo = [
         desc: "Film App | A complete Movie App | ReactJS | SCSS | BEM",
         url: "https://enriquedonaire.github.io/Mytheresa-movie-App-Test/"
 
+    },
+    {
+        src: "https://www.barcelonairporthotel.com/wp-content/uploads/2023/09/Deluxe-2022-1.jpg",
+        alt: "Miranda Hotel",
+        desc: "Hotel Site | Next generation Hotel web site | JavaScript | NodeJS | Express | BEM ",
+        url: "https://enriquedonaire.github.io/Hotel-Miranda-WebPage"
     },
     {
         src: "https://miro.medium.com/v2/da:true/resize:fit:1200/0*gMblHlHipRsjwsU6",
