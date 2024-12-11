@@ -1,0 +1,163 @@
+.skills-background-container{
+  background-color: rgb(6, 11, 10);
+  padding: 1rem 5rem;
+}
+
+.skills-container {
+  padding: 5rem;
+  margin: 3rem 0; /* Espaciado superior e inferior */
+  background-color: rgba(13, 23, 26, 0.994);
+  text-align: center;
+  border-radius: 55px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  color: #acacac;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-10px);
+}
+
+.icon-container {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  animation: bounce 2s infinite;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Agrega la sombra */
+}
+
+/* Colores personalizados por tecnología */
+.icon-js {
+  color: #f7df1e; /* JavaScript */
+}
+
+.icon-react {
+  color: #61dafb; /* React */
+}
+
+.icon-nodejs {
+  color: #83cd29; /* Node.js */
+}
+
+.icon-mongodb {
+  color: #47a248; /* MongoDB */
+}
+
+.icon-aws {
+  color: #ff9900; /* AWS */
+}
+
+.icon-git {
+  color: #f34f29; /* Git */
+}
+
+.icon-github {
+  color: #797979; /* GitHub */
+}
+
+.icon-docker {
+  color: #2496ed; /* Docker */
+}
+
+.icon-html5 {
+  color: #e34c26; /* HTML5 */
+}
+
+.icon-css3 {
+  color: #1572b6; /* CSS3 */
+}
+
+.icon-sass {
+  color: #cc6699; /* Sass */
+}
+
+.icon-bootstrap {
+  color: #4d2d7d; /* Bootstrap */
+}
+
+.icon-slack {
+  color: #580d5a; /* Slack */
+}
+
+.icon-npm {
+  color: #cb3837; /* NPM */
+}
+
+.icon-canvas {
+  color: #ff5722; /* Canvas */
+}
+
+.icon-adobexd {
+  color: #ff61f6; /* Adobe XD */
+}
+
+.icon-expressjs {
+  color: #000000; /* Express.js */
+}
+
+.icon-mongoose {
+  color: #800000; /* Mongoose */
+}
+
+.icon-babel {
+  color: #f9dc3e; /* Babel */
+}
+
+.icon-webpack {
+  color: #8dd6f9; /* Webpack */
+}
+
+.icon-typescript {
+  color: #007acc; /* TypeScript */
+}
+
+.icon-figma {
+  color:  #f24e1e;
+}
+
+.icon-vue {
+  color:  #005800;
+}
+.icon-angular {
+  color:  #890000;
+}
+
+.icon-discord {
+  color:  #0536bd;
+}
+.icon-StackOverflow {
+  color:  #cd6102;
+}
+
+
+.skill-label {
+  font-size: 1rem;
+  color: #8e8c8c;
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
