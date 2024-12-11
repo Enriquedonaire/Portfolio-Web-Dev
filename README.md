@@ -1,5 +1,5 @@
 ##  Portfolio Web-Dev 
-##  Tecnologies🛠️: 
+#  Tecnologies🛠️: 
 <br/>
 - ReactJS <br/>
 - JavaScript <br/>
@@ -13,6 +13,6 @@
 - Namecheap domains
 <br/>
 
-#   Web-Site💻 : 
+#  💻 Web-Site : 
 
 #   [https://enriquedonaire.github.io/Portfolio-Web-Dev](https://enriquedonaire.github.io/Portfolio-Web-Dev)
