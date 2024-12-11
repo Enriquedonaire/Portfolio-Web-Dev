@@ -1,6 +1,6 @@
-/* Modificación para hacer el slider responsive */
 
-/* Estilos para la clase principal del contenedor del slider */
+
+
 .swiper-container {
     display: flex;
     align-items: center;
@@ -9,7 +9,7 @@
     padding: 30px 0;
 }
 
-/* Ajustes para las diapositivas del Swiper */
+
 .swiper-slide {
     text-align: center;
     font-size: 18px;
@@ -21,7 +21,7 @@
     align-items: center;
 }
 
-/* Contenedor principal de cada slide */
+
 .slide-container {
     height: auto;
     border-radius: 40px;
@@ -33,14 +33,14 @@
 }
 
 .slide-container-img {
-    width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 55vh; /* Ocupa todo el alto del contenedor */
-    object-fit: cover; /* Escala la imagen para ajustarse al contenedor sin distorsión */
+    width: 100%; 
+    height: 55vh; 
+    object-fit: cover; 
     transition: all 0.2s ease-in-out;
-    /* margin-bottom: 150px; */
+    
 }
 
-/* Resto de tus estilos... */
+
 
     .slide-container-img:hover {
         transform: scale(1.2);
@@ -48,7 +48,7 @@
     }
 
 
-/* Estilos para la descripción del slide */
+
 .slide-desc {
     background-color: black;
     position: absolute;
@@ -60,7 +60,7 @@
     opacity: 0.8;
 }
 
-/* Texto en la descripción del slide */
+
 .slide-desc>span {
     color: rgb(208, 241, 228);
     display: block;
@@ -68,33 +68,39 @@
     padding: 10px;
 }
 
-/* Efecto de escala y opacidad al hacer hover en la imagen */
+
 .slide-container:hover .slide-container-img {
     transform: scale(1.2);
     opacity: 0.7;
 }
 
-/* Estilos para la descripción en dispositivos móviles */
+
 @media only screen and (max-width: 960px) {
     .swiper-title {
         width: 100%;
+        height: auto;
         text-align: center;
         padding: 30px 0;
     }
 
     .swiper-container {
         flex-direction: column;
+        height: auto;
+        width: 100%;
     }
 
     .slide-container {
         width: 100%;
         margin-top: 10px;
         margin-bottom: 10px;
+        height: auto;
+        width: 100%;
     }
 
     .slide-desc {
         padding: 5px;
     }
+    
 
     .slide-desc>span {
         font-size: 16px;

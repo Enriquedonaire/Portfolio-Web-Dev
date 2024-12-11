@@ -30,7 +30,7 @@ const Footer = () => {
                     <a href="https://codepen.io/Enrique-Andr" target="_blank" rel="noreferrer">
                         <i className="fab fa-codepen codepen"></i>
                     </a>
-                    <a href={`${process.env.PUBLIC_URL}/Enrique-Donaire-Web-Dev-2023.pdf`} download target="_blank" rel="noreferrer">
+                    <a href={`${process.env.PUBLIC_URL}/Enrique-Donaire-Full-Stack-Web-Developer-2024.pdf`} download target="_blank" rel="noreferrer">
                         <i className="fa-solid fa-file-pdf pdf"></i>
                     </a>
                     
