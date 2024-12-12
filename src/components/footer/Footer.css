@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    min-height: 115vh; /* Cambiado de altura fija a mínima para mejor responsividad */
+    min-height: 115vh;
     background-color: black;
     color: rgba(221, 214, 243, 0.87);
     padding-top: 150px;
@@ -12,10 +12,9 @@
 
 .footer-info {
     font-size: 45px;
-    padding: 100px 20 380px 380px;
-    width: 70%;
+    padding: 100px 20px 50px 20px; /* Ajustado para mantener proporción */
+    width: 100%;
     margin: 0 auto;
-    margin-bottom: 50px;
     color: rgba(76, 158, 151, 0.719);
     text-align: center;
 }
@@ -24,38 +23,27 @@
     padding-bottom: 15px;
 }
 
-.footer-info-P {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 0; /* Ajuste para centrar en pantallas pequeñas */
-}
-
 .footer-contact {
     font-size: 22px;
-    padding: 10px 30px; /* Simplificado para mejor responsividad */
-    width: 90%;
+    padding: 10px 30px;
+    width: 100%;
     margin: 0 auto;
-    text-align: center; /* Mejor legibilidad en dispositivos móviles */
+    text-align: center;
 }
 
 .footer-sns {
     width: 100%;
-    position: relative; /* Cambiado para mejor compatibilidad con diferentes pantallas */
+    position: relative;
     bottom: 40px;
-    left: 150px;
+    left: 0;
     right: 0;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    align-items: center;
-    gap: 1rem; /* Espaciado entre elementos */
-}
-
-.sns-links {
-    display: flex;
-    justify-content: center;
-    gap: 1rem; /* Espaciado entre los íconos */
+    display: flex; /* Flexbox para centrar */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    gap: 1rem; /* Espaciado fijo entre iconos */
+    flex-wrap: wrap; /* Permite que los iconos pasen a otra línea si no caben */
+    padding: 20px 0; /* Espaciado interno */
 }
 
 .linkedin,
@@ -63,47 +51,54 @@
 .codepen,
 .pdf {
     color: rgb(129, 129, 151);
-    font-size: 3rem; /* Tamaño más adecuado para pantallas pequeñas */
-    margin: 0 auto;
-    padding-bottom: 10px;
+    margin-right: 50px;
+    margin-top: 60px;
+    font-size: 3rem; /* Ajustado para tamaños adecuados */
+    padding: 10px; /* Espaciado interno del icono */
     border-bottom: 4px solid transparent;
-    transition: all 0.3s ease-out; /* Suavizado uniforme */
+    transition: all 0.3s ease-out;
 }
 
 .linkedin:hover,
 .github:hover,
-.codepen:hover {
+.codepen:hover,
+.pdf:hover {
     border-color: white;
+    transform: scale(1.1); /* Pequeño efecto al pasar el mouse */
 }
 
 .design-by {
     font-size: 18px;
-    padding-left: 20px;
+    padding-top: 20px;
     color: rgb(163, 159, 159);
-    text-align: center; /* Centrado en pantallas pequeñas */
+    text-align: center;
 }
 
 /* Responsividad para pantallas medianas */
 @media only screen and (max-width: 960px) {
     .footer-info {
-        text-align: center;
-        padding: 10px 20px; /* Ajuste más compacto */
         font-size: 30px;
+        padding: 20px;
     }
 
     .footer-contact {
         font-size: 18px;
-        padding: 20px;
+    }
+
+    .linkedin,
+    .github,
+    .codepen,
+    .pdf {
+        font-size: 2.5rem; /* Ajustado para pantallas medianas */
     }
 
     .footer-sns {
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Íconos más pequeños */
-        gap: 1rem;
+        gap: 2rem; /* Reduce el espacio entre iconos */
     }
 
     .design-by {
         font-size: 16px;
-        padding: 0 0 20px 0;
+        padding: 10px 0;
     }
 }
 
@@ -111,24 +106,22 @@
 @media only screen and (max-width: 480px) {
     .footer-info {
         font-size: 20px;
-        padding: 5px 10px;
+        padding: 10px;
     }
 
     .footer-contact {
         font-size: 14px;
-        padding: 10px;
-    }
-
-    .footer-sns {
-        grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-        gap: 0.5rem; /* Espaciado más compacto */
     }
 
     .linkedin,
     .github,
     .codepen,
     .pdf {
-        font-size: 2rem; /* Íconos más pequeños */
+        font-size: 2rem; /* Tamaño pequeño para iconos */
+    }
+
+    .footer-sns {
+        gap: 2rem; /* Ajuste de espaciado entre iconos */
     }
 
     .design-by {
