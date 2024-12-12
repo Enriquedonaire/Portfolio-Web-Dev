@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="cover-container">
                 <div className="footer-info">
                     <h1>Enrique Donaire</h1>
-                    <p>Barcelona - Spain</p>
+                    <p className="footer-info-P">Barcelona - Spain</p>
                 </div>
                 <div className="footer-contact">
                     <h3>Contact me</h3>
@@ -33,8 +33,6 @@ const Footer = () => {
                     <a href={`${process.env.PUBLIC_URL}/Enrique-Donaire-Full-Stack-Web-Developer-2024.pdf`} download target="_blank" rel="noreferrer">
                         <i className="fa-solid fa-file-pdf pdf"></i>
                     </a>
-                    
-                    <div><h3> Design By E.Donaire</h3></div>
                 </div>
                 
             </div>
