@@ -3,7 +3,6 @@ import { Navigation, Scrollbar, A11y, EffectCoverflow, Pagination } from 'swiper
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import "./Slider.css";
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -15,7 +14,6 @@ import 'swiper/css';
 const Slider = ({slides}) => {
     return (
         <Swiper
-          // install Swiper modules
             modules={[Navigation, EffectCoverflow, Pagination, Scrollbar, A11y]}
             effect={'coverflow'}
             spaceBetween={50}

@@ -12,7 +12,7 @@
 
 .footer-info {
     font-size: 45px;
-    padding: 100px 20px 50px 20px; /* Ajustado para mantener proporción */
+    padding: 100px 20px 50px 20px; 
     width: 100%;
     margin: 0 auto;
     color: rgba(76, 158, 151, 0.719);
@@ -38,12 +38,12 @@
     left: 0;
     right: 0;
     margin: 0 auto;
-    display: flex; /* Flexbox para centrar */
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
-    gap: 1rem; /* Espaciado fijo entre iconos */
-    flex-wrap: wrap; /* Permite que los iconos pasen a otra línea si no caben */
-    padding: 20px 0; /* Espaciado interno */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; 
+    flex-wrap: wrap; 
+    padding: 20px 0; 
 }
 
 .linkedin,
@@ -53,8 +53,8 @@
     color: rgb(129, 129, 151);
     margin-right: 50px;
     margin-top: 60px;
-    font-size: 3rem; /* Ajustado para tamaños adecuados */
-    padding: 10px; /* Espaciado interno del icono */
+    font-size: 3rem; 
+    padding: 10px; 
     border-bottom: 4px solid transparent;
     transition: all 0.3s ease-out;
 }
@@ -64,7 +64,7 @@
 .codepen:hover,
 .pdf:hover {
     border-color: white;
-    transform: scale(1.1); /* Pequeño efecto al pasar el mouse */
+    transform: scale(1.1); 
 }
 
 .design-by {
@@ -74,7 +74,7 @@
     text-align: center;
 }
 
-/* Responsividad para pantallas medianas */
+
 @media only screen and (max-width: 960px) {
     .footer-info {
         font-size: 30px;
@@ -89,11 +89,11 @@
     .github,
     .codepen,
     .pdf {
-        font-size: 2.5rem; /* Ajustado para pantallas medianas */
+        font-size: 2.5rem; 
     }
 
     .footer-sns {
-        gap: 2rem; /* Reduce el espacio entre iconos */
+        gap: 2rem; 
     }
 
     .design-by {
@@ -102,7 +102,7 @@
     }
 }
 
-/* Responsividad para pantallas pequeñas */
+
 @media only screen and (max-width: 480px) {
     .footer-info {
         font-size: 20px;
@@ -117,11 +117,11 @@
     .github,
     .codepen,
     .pdf {
-        font-size: 2rem; /* Tamaño pequeño para iconos */
+        font-size: 2rem; 
     }
 
     .footer-sns {
-        gap: 2rem; /* Ajuste de espaciado entre iconos */
+        gap: 2rem; 
     }
 
     .design-by {
