@@ -14,7 +14,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-contact">
                     <h3>Contact me</h3>
-                    <p>And let's get down to work</p>
+                    <p>And let's bring ideas to life</p>
                 </div>
                 <video className="video" src={bg1} autoPlay loop muted />
             </div>
